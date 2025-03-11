@@ -4,7 +4,7 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: azure;
+  background-color: #fff;
   position: relative;
 }
 
@@ -16,40 +16,169 @@
   background: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
-  /* width: calc(100% - 30px); */
   max-width: 100%;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
 }
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
   
-  .header-left {
-    display: flex;
-    align-items: center;
-  }
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
   
-  .logo {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
+.header-title {
+  font-size: 24px;
+}
   
-  .header-title {
-    font-size: 24px;
-    
-  }
+.header-icons {
+  display: flex;
+  gap: 20px;
+}
   
-  .header-icons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .icon {
-    font-size: 25px;
-    cursor: pointer;
-  }
-  
-  
-  
+.icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.subheader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background: #DDDDDD;
+  top: 70px;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+}
+
+.subheader-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 110px;
+  flex: 1;
+  overflow-y: auto;
+  left: 0;
+  padding: 10px;
+  height: calc(100vh - 160px);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #F9F9F9;
+  padding: 10px;
+  left: 0;
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 90px;
+  height: 70px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-info .icon{
+  color: #F82D2B;
+}
+
+.rating-box {
+  width: 50px;
+  background: #008000;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px 5px;
+  margin-left: 5px;
+}
+
+.star-icon {
+  margin-left: 5px;
+}
+
+/* Details Button */
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Added gap */
+}
+
+.details-button {
+  width: 90vw;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  z-index: 1000;
+}
+
+/* Navigation Items */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Navigation Icons */
+.nav-icon {
+  font-size: 24px;
+}
+
+/* Navigation Labels */
+.nav-label {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #333;
+}
