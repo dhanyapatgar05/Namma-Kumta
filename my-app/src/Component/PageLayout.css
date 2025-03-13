@@ -89,15 +89,15 @@
   display: flex;
   align-items: center;
   background: #F9F9F9;
-  padding: 10px;
+  padding: 20px;
   left: 0;
   margin-bottom: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
-  width: 90px;
-  height: 70px;
+  width: 100px;
+  height: 90px;
   border-radius: 5px;
   margin-right: 10px;
 }

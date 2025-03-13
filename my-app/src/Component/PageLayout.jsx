@@ -52,9 +52,10 @@ const PageLayout = () => {
                 </div>
               </div>
               <div className="button-container">
-                <button className="details-button">More details</button>
-              </div>
+              <button className="details-button">More details</button>
             </div>
+            </div>
+            
           </div>
         ))}
       </main>
@@ -70,7 +71,7 @@ const PageLayout = () => {
         </div>
         <div className="nav-item">
           <IoIosAddCircleOutline  className="nav-icon" />
-          <span className="nav-label">Add/join</span>
+          <span className="nav-label">Add/Join</span>
         </div>
         <div className="nav-item">
           <MdLightbulbOutline className="nav-icon" />
